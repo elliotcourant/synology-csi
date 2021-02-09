@@ -25,7 +25,7 @@ import (
 	"encoding/json"
 	"net/url"
 
-	"github.com/jparklab/synology-csi/pkg/synology/core"
+	"github.com/elliotcourant/synology-csi/pkg/synology/core"
 )
 
 const (

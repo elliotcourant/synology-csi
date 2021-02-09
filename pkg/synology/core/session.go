@@ -30,9 +30,9 @@ import (
 	"net/url"
 
 	retry "github.com/avast/retry-go"
+	"github.com/elliotcourant/synology-csi/pkg/synology/options"
 	"github.com/golang/glog"
 	"github.com/google/go-querystring/query"
-	"github.com/jparklab/synology-csi/pkg/synology/options"
 )
 
 func errorToDesc(code int) string {

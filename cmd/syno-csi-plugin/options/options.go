@@ -29,8 +29,8 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 
-	"github.com/jparklab/synology-csi/pkg/driver"
-	"github.com/jparklab/synology-csi/pkg/synology/options"
+	"github.com/elliotcourant/synology-csi/pkg/driver"
+	"github.com/elliotcourant/synology-csi/pkg/synology/options"
 )
 
 // RunOptions stores option values

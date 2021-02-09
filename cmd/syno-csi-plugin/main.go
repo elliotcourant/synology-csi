@@ -24,8 +24,8 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 
-	"github.com/jparklab/synology-csi/cmd/syno-csi-plugin/options"
-	"github.com/jparklab/synology-csi/pkg/driver"
+	"github.com/elliotcourant/synology-csi/cmd/syno-csi-plugin/options"
+	"github.com/elliotcourant/synology-csi/pkg/driver"
 )
 
 func main() {

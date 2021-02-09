@@ -24,8 +24,8 @@ import (
 	"encoding/json"
 	"net/url"
 
+	"github.com/elliotcourant/synology-csi/pkg/synology/core"
 	"github.com/golang/glog"
-	"github.com/jparklab/synology-csi/pkg/synology/core"
 )
 
 const (

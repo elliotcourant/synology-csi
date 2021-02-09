@@ -18,7 +18,7 @@ package core
 
 import (
 	"fmt"
-	"github.com/jparklab/synology-csi/pkg/synology/options"
+	"github.com/elliotcourant/synology-csi/pkg/synology/options"
 	"net/http"
 	"net/http/httptest"
 	"net/url"

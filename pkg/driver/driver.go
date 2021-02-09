@@ -25,10 +25,10 @@ import (
 
 	csi "github.com/container-storage-interface/spec/lib/go/csi"
 
-	"github.com/jparklab/synology-csi/pkg/synology/api/iscsi"
-	"github.com/jparklab/synology-csi/pkg/synology/api/storage"
-	"github.com/jparklab/synology-csi/pkg/synology/core"
-	"github.com/jparklab/synology-csi/pkg/synology/options"
+	"github.com/elliotcourant/synology-csi/pkg/synology/api/iscsi"
+	"github.com/elliotcourant/synology-csi/pkg/synology/api/storage"
+	"github.com/elliotcourant/synology-csi/pkg/synology/core"
+	"github.com/elliotcourant/synology-csi/pkg/synology/options"
 )
 
 const (

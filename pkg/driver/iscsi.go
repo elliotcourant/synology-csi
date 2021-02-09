@@ -25,7 +25,7 @@ import (
 	"github.com/golang/glog"
 	utilexec "k8s.io/utils/exec"
 
-	"github.com/jparklab/synology-csi/pkg/synology/api/iscsi"
+	"github.com/elliotcourant/synology-csi/pkg/synology/api/iscsi"
 )
 
 type iscsiDriver struct {

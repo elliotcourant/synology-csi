@@ -25,7 +25,7 @@ ARG TARGETPLATFORM="linux/amd64"
 FROM --platform=$BUILDPLATFORM golang:1.13.6-alpine as builder
 ARG BUILDPLATFORM
 RUN apk add --no-cache alpine-sdk
-WORKDIR /go/src/github.com/jparklab/synology-csi
+WORKDIR /go/src/github.com/elliotcourant/synology-csi
 COPY go.mod .
 RUN go mod download
 
@@ -61,6 +61,6 @@ LABEL maintainers="Kubernetes Authors"
 LABEL description="Synology CSI Plugin"
 
 RUN apk add --no-cache e2fsprogs e2fsprogs-extra xfsprogs xfsprogs-extra util-linux iproute2 blkid
-COPY --from=compiler /go/src/github.com/jparklab/synology-csi/bin/synology-csi-driver synology-csi-driver
+COPY --from=compiler /go/src/github.com/elliotcourant/synology-csi/bin/synology-csi-driver synology-csi-driver
 
 ENTRYPOINT ["/synology-csi-driver"]
