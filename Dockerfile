@@ -22,7 +22,7 @@ ARG TARGETPLATFORM="linux/amd64"
 #
 
 # Cache modules. The cache will be then used by all build stages
-FROM --platform=$BUILDPLATFORM golang:1.13.6-alpine as builder
+FROM --platform=$BUILDPLATFORM golang:1.15.8-alpine as builder
 ARG BUILDPLATFORM
 RUN apk add --no-cache alpine-sdk
 WORKDIR /go/src/github.com/elliotcourant/synology-csi
@@ -59,6 +59,7 @@ FROM alpine:latest
 
 LABEL maintainers="Kubernetes Authors"
 LABEL description="Synology CSI Plugin"
+LABEL org.opencontainers.image.source=https://github.com/elliotcourant/synology-csi
 
 RUN apk add --no-cache e2fsprogs e2fsprogs-extra xfsprogs xfsprogs-extra util-linux iproute2 blkid
 COPY --from=compiler /go/src/github.com/elliotcourant/synology-csi/bin/synology-csi-driver synology-csi-driver
