@@ -1,4 +1,6 @@
-# synology-csi ![Docker image](https://github.com/elliotcourant/synology-csi/workflows/Docker%20image/badge.svg) ![Go Report Card](https://goreportcard.com/badge/github.com/elliotcourant/synology-csi)
+# synology-csi
+
+Note: This is a fork of the original. I'll do my best to maintain it as I am actively using it.
 
 A [Container Storage Interface](https://github.com/container-storage-interface) Driver for Synology NAS.
 
